@@ -86,7 +86,10 @@ $(function () {
 
 function changeFunc($i) {
   if ($i == "English") {
-    window.open("../en", "_self");
+    window.open(
+      "https://danielsantanawebdesign.github.io/danielsantanawebdesign/en",
+      "_self",
+    );
   } else {
     window.open(
       "https://danielsantanawebdesign.github.io/danielsantanawebdesign",
