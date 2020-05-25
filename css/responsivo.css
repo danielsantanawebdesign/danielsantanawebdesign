@@ -1,0 +1,142 @@
+@media only screen and (max-width: 959px) {
+  /* Menu */
+  .menu ul li a {
+    font-size: 15px;
+  }
+  .menu ul li select {
+    font-size: 15px;
+  }
+  .menu ul li select option {
+    font-size: 15px;
+  }
+  .menu ul li a:hover {
+    font-size: 16px;
+  }
+  .menu ul li a:focus {
+    font-size: 16px;
+  }
+
+  /* Home */
+  .seta-baixo {
+    margin-top: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* Apresentação */
+  .apresentacao p {
+    width: 500px;
+    text-align: left;
+  }
+  .apresentacao p:last-child {
+    text-align: left;
+  }
+  .apr::before {
+    display: none;
+  }
+  .apr::after {
+    display: none;
+  }
+  .apresentacao-naming::before {
+    width: 500px;
+  }
+
+  /* Habilidades */
+  .card h3 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 18px;
+    padding: 0 5px;
+  }
+
+  /* Contato */
+  .faq form input {
+    width: 340px;
+  }
+  .faq form textarea {
+    width: 340px;
+  }
+  .faq form button {
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Header */
+  header {
+    height: auto;
+    position: relative;
+    background: #fff;
+  }
+  header::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: #000;
+    margin: 20px auto;
+  }
+  .logo-menu {
+    margin: 0 auto;
+    max-width: 150px;
+  }
+
+  /* Menu */
+  .menu {
+    text-align: center;
+    margin-top: -5px;
+    width: 300px;
+  }
+  .menu ul li a {
+    display: block;
+    color: #000;
+    width: 120px;
+    font-size: 1em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #language {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+  .foto-daniel {
+    margin: 75px auto 40px auto;
+  }
+  .seta-baixo {
+    width: 70px;
+    margin: 150px auto 50px auto;
+    clear: both;
+  }
+
+  /* Apresentação */
+
+  .apresentacao-naming::before {
+    width: 250px;
+  }
+
+  /* Form */
+  form {
+    padding-bottom: 40px;
+  }
+  label {
+    margin-left: 0;
+  }
+  input {
+    width: 300px !important;
+    margin-left: 0;
+  }
+  textarea {
+    margin-left: 0;
+    width: 300px !important;
+    margin-bottom: 15px;
+  }
+  button {
+    width: 300px !important;
+    margin-left: 0;
+  }
+
+  /* Social Media */
+  .social-media ul li {
+    margin-bottom: 30px;
+  }
+}

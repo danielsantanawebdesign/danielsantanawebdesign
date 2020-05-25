@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container smooth-link">
+      <a href="#home">
+        <img src="img/logo-pto.png" alt="Logo Daniel Santana Webdesign" class="grid-3 logo-menu">
+      </a>
+      <nav class="menu grid-13" id="my-nav-bar">
+        <ul class="menu-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">habilidades</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <select name="language" id="language" onchange="changeFunc(value)">
+              <option selected="selected" value="Portuguese">Portugues</option>
+              <option value="English">Inglês</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="container home smooth-link" id="home">
+    <img src="img/home-daniel.jpg" alt="Daniel" class="foto-daniel">
+    <h1 class="home-title">Bem vindos a minha Homepage</h1>
+    <p class="home-text">
+      Desliza pra cima pra saber mais sobre minhas Skills, e sobre o que posso contribuir com você!
+    </p>
+    <a href="#sobre" class="seta-transition"><img src="img/Down-Arrow.svg" alt="Seta para baixo" class="seta-baixo"></a>
+  </section>
+
+  <section class="apresentacao" id="sobre">
+    <div id="sobre-2" class="container apr">
+      <h2 class="title">Sobre</h2>
+      <img src="img/logo-bco-apresentacao.png" alt="Logo Daniel Santana" class="logo-apresentacao">
+      <p>O símbolo da marca é um "D" estilizado. É simples mas ele se assemelha ao botão de play que simboliza o início de tudo, parece também um símbolo de wi-fi angular, o que representa meu propósito de te manter conectado ao nosso mundo da internet.</p>
+      <p class="apresentacao-naming">A escolha de manter o meu nome na marca é devido ao fato de ser flexível na forma como pretendo trabalhar com você. Ou seja, não só quero manter um sistema "Empresarial", mas sim implatar uma metodologia mais pessoal, onde eu possa entender quais são suas aspirações e desenvolver isso.</p>
+    </div>
+  </section>
+
+  <section class="container skills" id="habilidades">
+    <h2 class="title">Habilidades</h2>
+    <ul class="produto-slide">
+      <li>
+        <article class="grid-1-3 card">
+          <img src="img/carousel/html5.svg" alt="">
+          <h3>Codigo Atualizado</h3>
+          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+        </article>
+      </li>
+      <li>
+        <article class="grid-1-3 card">
+          <img src="img/carousel/rapido.png" alt="Raio">
+          <h3>Codigo Atualizado</h3>
+          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+        </article>
+      </li>
+      <li>
+        <article class="grid-1-3 card">
+          <img src="img/carousel/responsivo.png" alt="Multiplos dispositivos">
+          <h3>Codigo Atualizado</h3>
+          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+        </article>
+      </li>
+      <li>
+        <article class="grid-1-3 card">
+          <img src="img/carousel/bonito.png" alt="Estrela">
+          <h3>Codigo Atualizado</h3>
+          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+        </article>
+      </li>
+    </ul>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="grid-8 faq-section">
+        <h2 class="title">FAQ</h2>
+        <h3 id="ask1">+ Por que eu faria um site nesse momento?</h3>
+        <p id="ans1">Um site é uma das melhores formas de marcar presença digital, se usado da maneira certa pode te ajudar a acelerar suas vendas, mesmo em momentos difíceis como esses.</p>
+
+        <h3 id="ask2">+ Quem deveria ter um site?</h3>
+        <p id="ans2">Qualquer pessoa com um 𝙣𝙚𝙜ó𝙘𝙞𝙤 ou uma 𝙞𝙙𝙚𝙞𝙖 , e quer que as pessoas saibam dela, deveria ter um site. Isso ajudará você a se colocar no "radar" virtual e dará a bilhões de pessoas a oportunidade de conhecer você ou sua ideia.</p>
+
+        <h3 id="ask3">+ É Caro ter um site?</h3>
+        <p id="ans3">Os valores podem variar muito dependendo da complexidade da sua ideia. Mas geralmente os preços se tornam investimentos, quanto mais você investe mais retorno terá.</p>
+
+        <h3 id="ask4">+ Por que fazer um site comigo?</h3>
+        <p id="ans4">A forma que eu desempenhar meu trabalho vai ser acompanhada desde o início por você, com demonstrações de como ficará o seu site antes do código. Sendo assim, se você não gostar da forma como eu proponho o serviço você pode cancelar desde o início sem problemas.</p>
+
+        <h3 id="ask5">+ Gostei do seu site e quero te contratar, Como faço?</h3>
+        <p id="ans5">É fácil. Você pode preencher o formulário a seguir, ou acessar uma de minhas redes sociais (Links na próxima seção). O Mais rápido possível retornarei o contato e acharemos a melhor solução para seu negócio.</p>
+      </div>
+      <div class="grid-8 form-section">
+        <h2 class="title">Contato</h2>
+        <form action="">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name">
+
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email">
+
+          <label for="Telefone">Telefone</label>
+          <input type="text" name="telefone" id="telefone">
+
+          <label for="Mensage">Mensagem / Orçamento</label>
+          <textarea name="mensage" id="mensage"></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container" id="contato">
+    <div class="grid-16 social-media">
+      <h2 class="title">Redes Sociais</h2>
+      <ul>
+        <li><a href="https://www.facebook.com/danielsantanawebdesign" alt="Facebook"><img src="img/social/facebook.png" alt="Facebook"></a></li>
+        <li><a href="www.linkedin.com/in/danielsantanawebdesign" alt="Linkedin"><img src="img/social/linkedin.png" alt="Linkedin"></a></li>
+        <li><a href="https://www.instagram.com/danielsantanawebdesign/" alt="Instagram"><img src="img/social/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://github.com/danielsantanawebdesign" alt="GitHub"><img src="img/social/github.png" alt="GitHub"></a></li>
+        <li><a href="https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5519996929044" alt=""><img src="img/social/whatsapp.png" alt="Whatsapp"></a></li>
+      </ul>
+    </div>
+    <!--
+    <div class="grid-3">
+      <h2 class="title">Language</h2>
+      <img src="img/language/portuguese.png" alt="Change to portuguese">
+      <img src="img/language/english.png" alt="Change to English">
+    </div>-->
+  </section>
+  <!-- <script src="js/simple-slide.js"></script> -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

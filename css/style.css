@@ -1,0 +1,337 @@
+/* Estilos Gerais */
+@font-face {
+  font-family: "Azonix Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Azonix Regular"), url("Azonix.woff") format("woff");
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+p {
+  font-size: 20px;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+}
+.title {
+  font-size: 28px;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 60px 0;
+}
+.title::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 3px;
+  background: #fff;
+  margin: 5px auto;
+}
+
+/* style-nav-a */
+header {
+  width: 100%;
+  height: 130px;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+.header.scrolled {
+  box-shadow: 3px 3px 15px;
+}
+.logo-menu {
+  max-width: 125px;
+}
+
+/* Menu */
+.menu {
+  text-align: right;
+  margin-top: 55px;
+}
+.menu ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 20px;
+  text-align: right;
+  font-size: 20px;
+  line-height: 25px;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.menu ul li a:hover {
+  font-size: 22px;
+  text-decoration: underline;
+}
+.menu ul li a:focus {
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+/* Home */
+.foto-daniel {
+  margin: 200px auto 40px auto;
+}
+.home h1 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1em;
+}
+.underline {
+  text-decoration: underline;
+}
+.home p {
+  font-size: 20px;
+  font-family: "Open-sans", sans-serif;
+  max-width: 580px;
+  text-align: center;
+  margin: 0 auto;
+}
+.seta-baixo {
+  width: 70px;
+  margin: 230px auto 50px auto;
+  clear: both;
+}
+
+/* Sobre */
+.apresentacao {
+  background: #000;
+  clear: both;
+}
+.apresentacao .title {
+  color: #fff;
+  padding-top: 60px;
+}
+.logo-apresentacao {
+  margin: 0 auto 50px auto;
+  position: relative;
+}
+.apr::before {
+  content: "";
+  width: 311px;
+  height: 339px;
+  display: block;
+  background: url(../img/linha1.png) no-repeat center;
+  position: absolute;
+  top: 289px;
+  left: 55px;
+}
+.apr::after {
+  content: "";
+  width: 395px;
+  height: 375px;
+  display: block;
+  background: url(../img/linha2.png) no-repeat center;
+  position: absolute;
+  top: 430px;
+  right: -55px;
+}
+.apresentacao p {
+  display: block;
+  width: 700px;
+  max-width: 85%;
+  margin: 0 auto;
+  color: #fff;
+}
+.apresentacao-naming::before {
+  content: "";
+  display: block;
+  width: 460px;
+  height: 4px;
+  background: #fff;
+  margin: 35px auto;
+}
+.apresentacao P:first-child {
+  text-align: left;
+  margin: 35px 0;
+}
+.apresentacao P:last-child {
+  text-align: right;
+  margin: 35px auto 10px auto;
+  padding-bottom: 60px;
+}
+
+/* produto */
+.skills .title:after {
+  background: #000;
+}
+.card {
+  border: 10px solid black;
+  height: 370px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.card img {
+  margin: 30px auto 10px auto;
+}
+.card h3,
+.card p {
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+.card h3:after {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 3px;
+  margin: 5px auto;
+  background: #000;
+}
+
+/* FAQ */
+.faq .container {
+  clear: both;
+}
+.faq {
+  background: #000;
+  color: #fff;
+  padding-bottom: 60px;
+}
+.faq .title {
+  text-align: left;
+}
+.faq-section .title::after {
+  text-align: left;
+  width: 100px;
+  margin: 0 0 0 -20px;
+}
+.faq .title:first-child {
+  margin-left: 20px;
+}
+.faq h3 {
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+.faq p {
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+}
+.faq p:last-child {
+  padding-bottom: 60px;
+}
+
+/* Formulário */
+.form-section .title::after {
+  text-align: left;
+  width: 140px;
+  margin: 0 0 0 0;
+}
+label {
+  display: block;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+input {
+  background: none;
+  border: 5px solid #fff;
+  width: 400px;
+  height: 45px;
+  margin-left: 20px;
+  color: #fff;
+  border-radius: 7px;
+  font-family: "Open-Sans", Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+textarea {
+  display: block;
+  margin-left: 20px;
+  width: 400px;
+  height: 220px;
+  background: none;
+  border: 5px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+  background: none;
+  border: 5px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  font-family: "Azonix Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+/* Redes Sociais */
+.social-media .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.social-media .title::after {
+  background: #000;
+}
+.social-media ul {
+  list-style: none;
+  display: block;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+.social-media ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.social-media ul li:hover::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #000;
+  margin: 10px auto 0 auto;
+}
+.social-media ul li:focus::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #000;
+  margin: 10px auto 0 auto;
+}
+
+/* Animações */
+
+/* Slick Slide */
+
+.produto-slide {
+  margin-bottom: 60px;
+}
+
+/* Maquina de Escrever */
+
+.home-title::after {
+  content: "|";
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca 0.7s infinite;
+}
+
+@keyframes pisca {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
