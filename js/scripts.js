@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
   $(".produto-slide").slick({
+    arrows: false,
     dots: true,
     infinite: true,
     speed: 300,
