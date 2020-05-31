@@ -25,10 +25,11 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container smooth-link">
-      <a href="#home">
-        <img src="img/logo-pto.png" alt="Logo Daniel Santana Webdesign" class="grid-3 logo-menu">
+  <!-- Header Desktop -->
+  <header class="header" id="header-desktop">
+    <div class="container">
+      <a href="#home" class="link-home">
+        <img src="img/logo-pto.png" alt="Logo Daniel Santana Webdesign" class="grid-3 logo-menu ">
       </a>
       <nav class="menu grid-13" id="my-nav-bar">
         <ul class="menu-links">
@@ -48,9 +49,35 @@
     </div>
   </header>
 
-  <section class="container home smooth-link" id="home">
-    <img src="img/home-daniel.jpg" alt="Daniel" class="foto-daniel">
-    <h1 class="home-title">Bem vindos a minha Homepage</h1>
+  <!-- Menu Mobile -->
+  <header class="header header-mobile" id="header-mobile">
+    <div class="container">
+      <div class="hamburger-menu"></div>
+      <a href="#home" class="link-home">
+        <img src="img/logo-pto.png" alt="Logo Daniel Santana Webdesign" class="grid-3 logo-menu logo-menu-mobile">
+      </a>
+      <nav class="menu nav-mobile grid-13" id="my-nav-bar">
+        <ul class="menu-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">habilidades</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <!-- Modifiquei O esquema das linguas -->
+            <select name="language" id="language" onchange="changeFunc(value)">
+              <option selected="selected" value="Portuguese">Portugues</option>
+              <option value="English">Inglês</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bg-black"></div>
+  </header>
+
+  <section class="container home" id="home">
+    <img src="img/daniel-cartoon.png" alt="Daniel" class="foto-daniel">
+    <h1 class="home-title">Bem vindos a minha Webpage</h1>
     <p class="home-text">
       Desliza pra cima pra saber mais sobre minhas Skills, e sobre o que posso contribuir com você!
     </p>
@@ -163,6 +190,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/scripts.js"></script>
+
 </body>
 
 </html>

@@ -42,15 +42,35 @@ typeWriter(title);
 // Efeito de suavizar no HREF
 
 const $navbar = $(".header");
+if (window.matchMedia("screen and (max-width: 767px)").matches) {
+  $(".nav-mobile").hide();
+  $(".logo-menu-mobile").hide();
+  $(".bg-black").removeClass("active");
 
-$('a[href^="#"]').on("click", function (e) {
-  e.preventDefault();
+  $('a[href^="#"]').on("click", function (e) {
+    e.preventDefault();
+    $(".logo-menu-mobile").slideToggle(500);
+    $(".nav-mobile").slideToggle(500);
 
-  const scrollTop =
-    $($(this).attr("href")).position().top - $navbar.outerHeight();
+    const scrollTop = $($(this).attr("href")).position().top - 50;
 
-  $("html, body").animate({ scrollTop });
-});
+    $("html, body").animate({ scrollTop });
+
+    $(".logo-menu-mobile").hide();
+    $(".nav-mobile").hide();
+    $(".bg-black").removeClass("active");
+    $(".hamburger-menu").removeClass("active");
+  });
+} else {
+  $('a[href^="#"]').on("click", function (e) {
+    e.preventDefault();
+
+    const scrollTop =
+      $($(this).attr("href")).position().top - $navbar.outerHeight();
+
+    $("html, body").animate({ scrollTop });
+  });
+}
 
 // Toogle
 $(document).ready(function () {
@@ -58,6 +78,7 @@ $(document).ready(function () {
   $("#ans3").hide();
   $("#ans4").hide();
   $("#ans5").hide();
+
   $("#ask1").on("click", function () {
     $("#ans1").toggle(500);
   });
@@ -72,6 +93,27 @@ $(document).ready(function () {
   });
   $("#ask5").on("click", function () {
     $("#ans5").toggle(500);
+  });
+
+  $(".hamburger-menu").on("click", function () {
+    $(".logo-menu-mobile").slideToggle(500);
+    $(".nav-mobile").slideToggle(500);
+    $(".bg-black").toggleClass("active");
+    $(".hamburger-menu").toggleClass("active");
+    $(".header-mobile").click(function (event) {
+      event.stopPropagation();
+    });
+    $(document).click(function () {
+      $(".logo-menu-mobile").hide();
+      $(".nav-mobile").hide();
+    });
+    $(".bg-black.active").on("click", function () {
+      console.log("Função funcionando");
+      $(".nav-mobile").hide();
+      $(".logo-menu-mobile").hide();
+      $(".bg-black").removeClass("active");
+      $(".hamburger-menu").removeClass("active");
+    });
   });
 });
 
@@ -98,3 +140,7 @@ function changeFunc($i) {
     );
   }
 }
+
+// Functions
+
+// Esnconde toogle ao clicar no bg-black

@@ -75,6 +75,8 @@ header {
 /* Home */
 .foto-daniel {
   margin: 200px auto 40px auto;
+  border-radius: 50%;
+  border: 3px solid #000;
 }
 .home h1 {
   font-size: 2em;
@@ -317,6 +319,7 @@ button {
   height: 3px;
   background: #000;
   margin: 10px auto 0 auto;
+  transition: ease-in-out;
 }
 .social-media ul li:focus::after {
   content: "";
