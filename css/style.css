@@ -36,6 +36,10 @@ header {
   top: 0;
   background: #fff;
   z-index: 10;
+  overflow-x: hidden !important;
+}
+body {
+  overflow-x: hidden !important;
 }
 .header.scrolled {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);

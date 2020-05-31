@@ -106,22 +106,22 @@
       <li>
         <article class="grid-1-3 card">
           <img src="img/carousel/rapido.png" alt="Raio">
-          <h3>Codigo Atualizado</h3>
-          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+          <h3>Super Rápido</h3>
+          <p>O seu usuário terá uma experiência excepcional! o que inclui que cuidarei para que o site seja rápido e sem travamentos.</p>
         </article>
       </li>
       <li>
         <article class="grid-1-3 card">
           <img src="img/carousel/responsivo.png" alt="Multiplos dispositivos">
-          <h3>Codigo Atualizado</h3>
-          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+          <h3>Responsivo</h3>
+          <p>Onde e quando quiser. Seu site será visto em vários tipos de tela sem medo de se "quebrar"</p>
         </article>
       </li>
       <li>
         <article class="grid-1-3 card">
           <img src="img/carousel/bonito.png" alt="Estrela">
-          <h3>Codigo Atualizado</h3>
-          <p>Farei o seu site estar de acordo com o que há de mais novo nas linguagens HTML, CSS e JavaScript. Isso resultará em mais visibilidade pra você!</p>
+          <h3>Bonito</h3>
+          <p>A aparência também é importante. Darei meu máximo para que seu site esteja pronto para conquistar corações na internet</p>
         </article>
       </li>
     </ul>
@@ -135,7 +135,7 @@
         <p id="ans1">Um site é uma das melhores formas de marcar presença digital, se usado da maneira certa pode te ajudar a acelerar suas vendas, mesmo em momentos difíceis como esses.</p>
 
         <h3 id="ask2">+ Quem deveria ter um site?</h3>
-        <p id="ans2">Qualquer pessoa com um 𝙣𝙚𝙜ó𝙘𝙞𝙤 ou uma 𝙞𝙙𝙚𝙞𝙖 , e quer que as pessoas saibam dela, deveria ter um site. Isso ajudará você a se colocar no "radar" virtual e dará a bilhões de pessoas a oportunidade de conhecer você ou sua ideia.</p>
+        <p id="ans2">Qualquer pessoa com um negócio ou uma ideia , e quer que as pessoas saibam dela, deveria ter um site. Isso ajudará você a se colocar no "radar" virtual e dará a bilhões de pessoas a oportunidade de conhecer você ou sua ideia.</p>
 
         <h3 id="ask3">+ É Caro ter um site?</h3>
         <p id="ans3">Os valores podem variar muito dependendo da complexidade da sua ideia. Mas geralmente os preços se tornam investimentos, quanto mais você investe mais retorno terá.</p>
@@ -148,7 +148,10 @@
       </div>
       <div class="grid-8 form-section">
         <h2 class="title">Contato</h2>
-        <form method="POST" action="./enviar-sendgrid.php" name="orcamentos" class="formphp">
+        <form method="POST" action="./enviar-sendgrid.php" name="orcamentos" class="formphp" id="form_orcamento">
+
+          <input type="Hidden" class="nao-aparece" name="language" value="Portugues">
+
           <label for="name">Nome</label>
           <input type="text" name="name" id="name" required>
 
@@ -165,7 +168,7 @@
           <input type="text" class="nao-aparece" name="dontchange" value="http://">
 
           <label for="Mensage">Mensagem / Orçamento</label>
-          <textarea name="mensage" id="mensage"></textarea>
+          <textarea name="mensage" id="mensage" required></textarea>
           <button type="submit" id="enviar" name="enviar">Enviar</button>
         </form>
       </div>
@@ -186,12 +189,12 @@
     </div>
     <!--
     <div class="grid-3">
-      <h2 class="title">Language</h2>
+        <h2 class="title">Language</h2>{}
       <img src="img/language/portuguese.png" alt="Change to portuguese">
       <img src="img/language/english.png" alt="Change to English">
     </div>-->
   </section>
-  <!-- <script src="js/simple-slide.js"></script> -->
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>

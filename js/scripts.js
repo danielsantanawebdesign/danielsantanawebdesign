@@ -141,6 +141,15 @@ function changeFunc($i) {
   }
 }
 
-// Functions
+// Formulário
 
-// Esnconde toogle ao clicar no bg-black
+if (window.SimpleForm) {
+  new SimpleForm({
+    form: ".formphp", // seletor do formulário
+    button: "#enviar", // seletor do botão
+    erro:
+      "<div id='form-erro'><h3>Erro no Envio!</h3><p>Um erro ocorreu, tente para o email santanadasilvadaniel@gmail.com</p></div>", // mensagem de erro
+    sucesso:
+      "<div id='form-sucesso'><h3>Formulário enviado com sucesso</h3><p>Em breve eu entro em contato com você.</p></div>", // mensagem de sucesso
+  });
+}

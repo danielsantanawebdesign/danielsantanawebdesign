@@ -3,7 +3,7 @@
 require("./sendgrid-php/sendgrid-php.php");
 
 $email_site = "santanadasilvadaniel@gmail.com";
-$nome_site = "Daniel Santana Webdesign";
+$nome_site = "DanielSantanaWebdesign";
 
 $email_user = $_POST["email"];
 $nome_user = $_POST["nome"];
@@ -22,7 +22,7 @@ $email->addTo($email_site, $nome_site);
 
 $email->setReplyTo($email_user, $nome_user);
 
-$email->setSubject("Formulário Bikcraft");
+$email->setSubject("Formulário Daniel Santana Webdesign");
 $email->addContent("text/plain", $body_content);
 
 $sendgrid = new \SendGrid('SG.iaNt9x92RcuGhEPP9PKc4w.WBPZSQQrcW49zI8PHS-QechzXciY7KqcYt1Y77mQI5A');
