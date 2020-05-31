@@ -148,19 +148,25 @@
       </div>
       <div class="grid-8 form-section">
         <h2 class="title">Contato</h2>
-        <form action="">
+        <form method="POST" action="./enviar-sendgrid.php" name="orcamentos" class="formphp">
           <label for="name">Nome</label>
-          <input type="text" name="name" id="name">
+          <input type="text" name="name" id="name" required>
 
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
 
           <label for="Telefone">Telefone</label>
           <input type="text" name="telefone" id="telefone">
 
+          <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+          <input type="text" class="nao-aparece" name="leaveblank">
+
+          <label class="nao-aparece">Se você não é um robô, Não mude este campo.</label>
+          <input type="text" class="nao-aparece" name="dontchange" value="http://">
+
           <label for="Mensage">Mensagem / Orçamento</label>
           <textarea name="mensage" id="mensage"></textarea>
-          <button type="submit">Enviar</button>
+          <button type="submit" id="enviar" name="enviar">Enviar</button>
         </form>
       </div>
     </div>
@@ -189,6 +195,7 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/simple-form.js"></script>
   <script src="js/scripts.js"></script>
 
 </body>

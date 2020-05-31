@@ -293,6 +293,20 @@ button {
   font-size: 18px;
   cursor: pointer;
 }
+.nao-aparece {
+  visibility: hidden;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#form-sucesso {
+  color: #fff;
+}
+
+#form-erro {
+  color: #f64540;
+}
 
 /* Redes Sociais */
 .social-media .title {
