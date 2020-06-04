@@ -129,15 +129,9 @@ $(function () {
 
 function changeFunc($i) {
   if ($i == "English") {
-    window.open(
-      "https://danielsantanawebdesign.github.io/danielsantanawebdesign/en",
-      "_self",
-    );
+    window.open("http://danielsantanawebdesign-com.umbler.net/en", "_self");
   } else {
-    window.open(
-      "https://danielsantanawebdesign.github.io/danielsantanawebdesign",
-      "_self",
-    );
+    window.open("http://danielsantanawebdesign-com.umbler.net/", "_self");
   }
 }
 
