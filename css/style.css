@@ -77,6 +77,9 @@ body {
 }
 
 /* Home */
+.home {
+  background: #fff;
+}
 .foto-daniel {
   margin: 200px auto 40px auto;
   border-radius: 50%;
@@ -164,6 +167,9 @@ body {
 }
 
 /* Skills */
+.skills {
+  background: #fff;
+}
 .skills .title:after {
   background: #000;
 }
@@ -172,6 +178,7 @@ body {
   height: 370px;
   margin-top: 0;
   margin-bottom: 40px;
+  outline: none;
 }
 .card img {
   margin: 30px auto 10px auto;
@@ -313,6 +320,10 @@ button {
 }
 
 /* Redes Sociais */
+#contato {
+  background: #fff;
+}
+
 .social-media .title {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -337,7 +348,6 @@ button {
   height: 3px;
   background: #000;
   margin: 10px auto 0 auto;
-  transition: ease-in-out;
 }
 .social-media ul li:focus::after {
   content: "";

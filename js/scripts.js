@@ -74,6 +74,11 @@ if (window.matchMedia("screen and (max-width: 767px)").matches) {
 
 // Toogle
 $(document).ready(function () {
+  $(".logo-menu-mobile").hide();
+  $(".nav-mobile").hide();
+  $(".bg-black").removeClass("active");
+  $(".hamburger-menu").removeClass("active");
+
   $("#ans2").hide();
   $("#ans3").hide();
   $("#ans4").hide();
@@ -129,9 +134,9 @@ $(function () {
 
 function changeFunc($i) {
   if ($i == "English") {
-    window.open("http://danielsantanawebdesign-com.umbler.net/en", "_self");
+    window.open("http://danielsantanawebdesign.com/en.html", "_self");
   } else {
-    window.open("http://danielsantanawebdesign-com.umbler.net/", "_self");
+    window.open("http://danielsantanawebdesign.com/", "_self");
   }
 }
 
