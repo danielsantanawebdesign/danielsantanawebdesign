@@ -12,7 +12,7 @@ $email_envio = "santanadasilvadaniel@gmail.com"; // E-mail do site (ex: contato@
 $email_pass = "ijerhzwhtzztnwno"; // Senha do e-mail
 
 $site_name = "Daniel Santana Webdesign"; // Nome do Site
-$site_url = "http://danielsantanawebdesign-com.umbler.net/"; // URL do Site
+$site_url = "http://danielsantanawebdesign.com/"; // URL do Site
 
 $host_smtp = "smtp.gmail.com"; // HOST SMTP Ex: smtp.domain.com.br
 $host_port = "587"; // Porta do Host, geralmente 465 ou 587
