@@ -181,13 +181,19 @@
   .social-media ul li {
     margin-bottom: 30px;
   }
+  .social-media ul li a img {
+    width: 40px;
+    height: 40px;
+  }
+  #contato {
+    padding-bottom: 20px;
+  }
 }
-@media (min-width: 768px) {
+
+@media only screen and (min-width: 768px) {
   .hamburger-menu {
     display: none;
   }
-}
-@media only screen and (min-width: 768px) {
   #header-mobile {
     display: none;
   }
