@@ -207,6 +207,9 @@ body {
 .produto-slide {
   margin-bottom: 60px;
 }
+.produto-slide li {
+  outline: none;
+}
 .slick-dots li button:before {
   font-size: 15px;
   top: -10px;
