@@ -322,6 +322,7 @@ button {
 /* Redes Sociais */
 #contato {
   background: #fff;
+  padding-bottom: 60px;
 }
 
 .social-media .title {
@@ -333,29 +334,22 @@ button {
 }
 .social-media ul {
   list-style: none;
-  display: block;
-  margin: 0 auto 50px auto;
-  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  justify-content: space-evenly;
 }
 .social-media ul li {
-  display: inline-block;
-  margin-right: 40px;
+  display: flex;
+  transition: all 0.5s;
 }
-.social-media ul li:hover::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #000;
-  margin: 10px auto 0 auto;
-}
-.social-media ul li:focus::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #000;
-  margin: 10px auto 0 auto;
+.social-media ul li:hover,
+.social-media ul li:focus {
+  border-bottom: 4px solid #000;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 20px;
 }
 
 /* Maquina de Escrever */
