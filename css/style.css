@@ -341,15 +341,14 @@ button {
   justify-content: space-evenly;
 }
 .social-media ul li {
-  display: flex;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in-out;
 }
 .social-media ul li:hover,
 .social-media ul li:focus {
   border-bottom: 4px solid #000;
   padding-bottom: 20px;
-  position: relative;
-  bottom: 20px;
+  transform: translateY(-20px);
+  transition: all 0.5s ease-in-out;
 }
 
 /* Maquina de Escrever */
